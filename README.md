@@ -21,4 +21,4 @@ This project is a minor project aimed at creating a simple chat application usin
 
 ## Database
 
-- MongoDb
+- MongoDB
