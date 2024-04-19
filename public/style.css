@@ -1,0 +1,27 @@
+body {
+    margin-left: 20px;
+}
+
+
+
+.chat {
+    width: 50%;
+    background-color: aliceblue;
+    padding: 20px;
+    margin-left: 23%;
+    border-radius: 16px;
+}
+
+.message {
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 15px;
+}
+
+h1 {
+    margin-left: 45%;
+}
+
+.NewChatBtn {
+    margin-left: 25%;
+}

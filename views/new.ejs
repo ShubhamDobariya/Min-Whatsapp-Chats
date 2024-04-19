@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Chats</title>
+    <style>
+      body {
+        margin-left: 38%;
+        margin-top: 8%;
+        background-color: dodgerblue;
+      }
+      .CreateChatBox {
+        width: 300px;
+        height: 400px;
+        background-color: aliceblue;
+        border: 2px solid black;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="CreateChatBox">
+      <h1>Create New Chat</h1>
+      <hr />
+      <br />
+      <form method="post" action="/chats">
+        <input
+          type="text"
+          name="from"
+          placeholder="Enter your name"
+        /><br /><br />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Write your message here..."
+        ></textarea
+        ><br /><br />
+        <input
+          type="text"
+          name="to"
+          placeholder="Enter Receiver name"
+        /><br /><br />
+        <button>Create Chat</button>
+      </form>
+    </div>
+  </body>
+</html>

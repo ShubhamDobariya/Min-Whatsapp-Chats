@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Message</title>
+    <style>
+      body {
+        margin-left: 38%;
+        margin-top: 8%;
+        background-color: dodgerblue;
+      }
+      .editBox {
+        width: 300px;
+        height: 400px;
+        background-color: aliceblue;
+        border: 2px solid black;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="editBox">
+      <h1>Edit Message</h1>
+      <hr />
+      <p>Edit your chat : <b><%= chat._id %></b></p>
+      <p>
+        This chat was sent from <b><%= chat.from %></b> to <b><%= chat.to %></b>
+      </p>
+      <form action="/chats/<%= chat._id %>?_method=put" method="post">
+        <textarea name="message" cols="30" rows="10">
+<%= chat.message %></textarea
+        ><br /><br />
+        <button>Save</button>
+      </form>
+    </div>
+  </body>
+</html>
